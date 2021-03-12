@@ -1,0 +1,67 @@
+
+import "./App.css";
+import Person from "./components/person/Person";
+import Button from "./components/button/Button";
+import PinkButton from "./components/PinkButton/PinkButton";
+import PersonList from "./components/PersonList/PersonList";
+import RedButton from "./components/RedButton/RedButton";
+function App() {
+  const persons = [
+    { name: "Elon Baike", age: 47, hobby: "Ice skating, Eating donuts, Dancing under the moon" },
+    { name: "Bill Baike", age: 50, hobby: "Saving the world" }
+  ];
+  return (
+    <div className="App">
+      <Person name="Elon Baike" age={47} >
+        Ice skating, Eating donuts, Dancing under the moon
+      </Person>
+      <Person name="Bill Baike" age={50}>
+        Saving the world
+      </Person>
+      <span className="highlight">Hello</span>
+      <Button className="button">sumbit</Button>
+      <PinkButton>style#2</PinkButton>
+      <RedButton>style#red </RedButton>
+      { <PersonList persons={persons} />}
+    </div>
+  );
+}
+export default App;
+
+
+/*
+
+import Person from "./components/Person/Person";
+import "./App.css";
+import PersonList from "./components/PersonList/PersonList";
+function App() {
+  const persons = [
+    { name: "Elon Baike", age: 47, hobby: "Ice skating, Eating donuts, Dancing under the moon" },
+    { name: "Bill Baike", age: 50, hobby: "Saving the world" }
+  ];
+  return (
+    <div className="App">
+      <PersonList persons={persons} />
+    </div>
+  );
+}
+export default App;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
